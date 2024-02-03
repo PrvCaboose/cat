@@ -4,10 +4,14 @@ html {
     align-items: center;
     margin: 0;
     height: 100%;
+    background-image: url("../cat/cat.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    min-height: 100vh;
 }
 
 #cat-button {
-    background-color: green;
+    background-color: #1c87c9;
     border: none;
     color: white;
     padding: 24px 48px;
@@ -26,3 +30,53 @@ html {
     background-color: rgb(0, 136, 0);
     color: rgb(240, 240, 240);
 }
+
+@keyframes glowing {
+    0% {
+      background-color: #a80505;
+      box-shadow: 0 0 3px #a80505;
+    }
+    10% {
+        background-color: #cf730a;
+        box-shadow: 0 0 3px #cf730a;
+    }
+    20% {
+      background-color: #ecdd08;
+      box-shadow: 0 0 10px #ecdd08;
+    }
+    30% {
+        background-color: #26a805;
+        box-shadow: 0 0 3px #26a805;
+    }
+    40% {
+        background-color: #05a83b;
+        box-shadow: 0 0 3px #05a83b;
+    }
+    50% {
+        background-color: #05a885;
+        box-shadow: 0 0 3px #05a885;
+    }
+    60% {
+        background-color: #054ca8;
+        box-shadow: 0 0 3px #054ca8;
+    }
+    70% {
+        background-color: #0515a8;
+        box-shadow: 0 0 3px #0515a8;
+    }
+    80% {
+        background-color: #3605a8;
+        box-shadow: 0 0 3px #3605a8;
+    }
+    90% {
+        background-color: #a8059a;
+        box-shadow: 0 0 3px #a8059a;
+    }
+    100% {
+      background-color: #a80505;
+      box-shadow: 0 0 3px #a80505;
+    }
+  }
+  #cat-button {
+    animation: glowing 700ms infinite;
+  }
