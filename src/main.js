@@ -1,6 +1,6 @@
 "use strict";
 
-let catImages = ["../cat/cat1.png","../cat/cat2.png","../cat/cat3.png","../cat/cat4.png","../cat/cat5.png","cat/cat6.png","cat/cat7.png","../cat/cat8.png","../cat/cat9.png","../cat/cat10.png","../cat/cat11.png","../cat/cat12.png","../cat/cat13.png","../cat/cat14.png","../cat/cat15.png","../cat/cat16.png","../cat/cat17.png"];
+let catImages = ["../cat-images/cat1.png","../cat-images/cat2.png","../cat-images/cat3.png","../cat-images/cat4.png","../cat-images/cat5.png","../cat-images/cat6.png","../cat-images/cat7.png","../cat-images/cat8.png","../cat-images/cat9.png","../cat-images/cat10.png","../cat-images/cat11.png","../cat-images/cat12.png","../cat-images/cat13.png","../cat-images/cat14.png","../cat-images/cat15.png","../cat-images/cat16.png","../cat-images/cat17.png"];
 let shuffledImages = catImages;
 if (!localStorage.getItem("Images")) {
     window.localStorage.setItem("Images", JSON.stringify(shuffledImages));
