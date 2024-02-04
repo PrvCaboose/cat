@@ -66,6 +66,7 @@ window.onload = () => {
     let date = new Date();
     let i = date.getDay();
     shuffledImages = JSON.parse(window.localStorage.getItem("Images"));
+    console.log(shuffledImages[0]);
     const background = document.querySelector("html").style.backgroundImage = `url(${shuffledImages[i]})`;
     const downloadLink = document.querySelector("#download-link").setAttribute("href", shuffledImages[i]);
 }
