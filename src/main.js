@@ -62,6 +62,7 @@ setInterval(function () {
     hour = date.getHours();
 }, 1000);
 
+// Load image from storage as the page loads
 window.onload = () => {
     let date = new Date();
     let i = date.getDay();
