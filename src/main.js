@@ -2,7 +2,7 @@
 
 let catImages = ["../cat/cat1.png","../cat/cat2.png","../cat/cat3.png","../cat/cat4.png","../cat/cat5.png","../cat/cat6.png","../cat/cat7.png","../cat/cat8.png","../cat/cat9.png","../cat/cat10.png","../cat/cat11.png","../cat/cat12.png","../cat/cat13.png","../cat/cat14.png","../cat/cat15.png","../cat/cat16.png","../cat/cat17.png"];
 let shuffledImages = catImages;
-if (localStorage.getItem("Images") === null) {
+if (!localStorage.getItem("Images")) {
     window.localStorage.setItem("Images", JSON.stringify(shuffledImages));
 }
 let oldDate = new Date;
